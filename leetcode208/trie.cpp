@@ -83,6 +83,7 @@ public:
 		}
 		return p->count;
 	}
+
 private:
 	TrieNode* root;
 };
