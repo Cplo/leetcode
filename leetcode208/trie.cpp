@@ -1,4 +1,4 @@
-#include<iostream>
+#include<cstdio>
 using namespace std;
 #include<vector>
 #include<algorithm>
@@ -37,12 +37,12 @@ public:
 		root = new TrieNode();
 	}
 	// Inserts a word into the trie.
-	void insert(string s) {
-		int n = s.length();
+	void insert(char* s) {
+		int n = strlen(s);
 		if (!n) return;
 		TrieNode *p = root;
 		for (int i = 0; i < n; i++){
-			if (p->m[s[i]-'a'] == NULL){
+			if (p->m[s[i] - 'a'] == NULL){
 				TrieNode *node = new TrieNode(s[i]);
 				//root->m.insert(make_pair(s[i],node));
 				p->m[s[i] - 'a'] = node;
@@ -57,8 +57,8 @@ public:
 	}
 
 	// Returns if the word is in the trie.
-	bool search(string key) {
-		int n = key.length();
+	bool search(char *key) {
+		int n = strlen(key);
 		if (!n) return false;
 		TrieNode *p = root;
 		for (int i = 0; i < n; i++) {
@@ -71,8 +71,9 @@ public:
 
 	// Returns if there is any word in the trie
 	// that starts with the given prefix.
-	int startsWith(string prefix) {
-		int n = prefix.length();
+	int startsWith(char *prefix) {
+		//int n = prefix.length();
+		int n = strlen(prefix);
 		if (!n) return false;
 		TrieNode *p = root;
 		for (int i = 0; i < n; i++) {
@@ -82,7 +83,6 @@ public:
 		}
 		return p->count;
 	}
-
 private:
 	TrieNode* root;
 };
@@ -96,21 +96,22 @@ int main()
 {
 	Trie t;
 	int n, m;
-	cin >> n;// scanf("%d", &n);
-	string s;
+	//cin >> n;
+	scanf("%d", &n);
+	char s[11];
 	for (int i = 0; i < n; i++){
-		//scanf("%s", s);
-		cin >> s;
+		scanf("%s", s);
+		//cin >> s;
 		t.insert(s);
 	}
-	//scanf("%d", &m);
-	cin >> m;
+	scanf("%d", &m);
+	//cin >> m;
 	for (int i = 0; i < m; i++){
-		cin >> s;
-		//scanf("%s", s);
+		//cin >> s;
+		scanf("%s", s);
 		//printf("%s\n", s);
 		//cout << s << endl;
-		cout << t.startsWith(s) << endl;
+		printf("%d\n", t.startsWith(s));
 		//printf("%d\n", ans);
 	}
 	return 0;
