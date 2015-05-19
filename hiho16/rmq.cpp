@@ -1,10 +1,6 @@
 #include<cstdio>
-#include<string>
-#include<string.h>
-#include<map>
-#include<vector>
-#include<string.h>
 #include<algorithm>
+#include<math.h>
 #define SIZE 1000005
 using namespace std;
 int arr[SIZE];
