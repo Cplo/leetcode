@@ -165,6 +165,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hiho47", "hiho47\hiho47.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode091", "leetcode091\leetcode091.vcxproj", "{C3A7EC49-B734-468B-B28A-4574F0E9BB18}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode095", "leetcode095\leetcode095.vcxproj", "{D6ABD15A-5A80-45AB-8A0E-378908E9D6B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -495,6 +497,10 @@ Global
 		{C3A7EC49-B734-468B-B28A-4574F0E9BB18}.Debug|Win32.Build.0 = Debug|Win32
 		{C3A7EC49-B734-468B-B28A-4574F0E9BB18}.Release|Win32.ActiveCfg = Release|Win32
 		{C3A7EC49-B734-468B-B28A-4574F0E9BB18}.Release|Win32.Build.0 = Release|Win32
+		{D6ABD15A-5A80-45AB-8A0E-378908E9D6B3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D6ABD15A-5A80-45AB-8A0E-378908E9D6B3}.Debug|Win32.Build.0 = Debug|Win32
+		{D6ABD15A-5A80-45AB-8A0E-378908E9D6B3}.Release|Win32.ActiveCfg = Release|Win32
+		{D6ABD15A-5A80-45AB-8A0E-378908E9D6B3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
