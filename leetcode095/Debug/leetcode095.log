@@ -1,4 +1,4 @@
-﻿生成启动时间为 2015/5/30 12:16:34。
+﻿生成启动时间为 2015/6/2 10:55:02。
      1>项目“E:\coder\oj\leetcode095\leetcode095.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt generateTrees.cpp
@@ -10,4 +10,4 @@
 
 生成成功。
 
-已用时间 00:00:01.30
+已用时间 00:00:01.11
