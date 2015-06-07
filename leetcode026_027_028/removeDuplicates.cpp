@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 #include<string>
 //运行时间：8ms
@@ -16,6 +17,32 @@ public:
 			else i++;
 		}
 		return j;
+	}
+	int removeDuplicates(vector<int>& nums) {
+		int n = nums.size();
+		int ans = 0;
+		int k;
+		int count;
+		int j = 0;
+		for (int i = 0; i < n;) {
+			k = i;
+			count = 1;
+			while (k+1 < n&&nums[k+1] == nums[k]){
+				k++;
+				count++;
+			}
+			if (count >= 2) {
+				ans += 2;
+				nums[j] = nums[j + 1] = nums[i];
+				j += 2;
+			}
+			else {
+				ans += 1;
+				nums[j++] = nums[i];
+			}
+			i = k+1;
+		}
+		return ans;
 	}
 	int removeElement(int A[], int n, int elem) {
 		if (!n) return 0;
@@ -67,6 +94,9 @@ int main(){
 	int n = so.removeElement(A, 10,2);
 	for (int i = 0; i < n; i++)
 		cout << A[i] << endl;*/
-	cout << so.strStr("aaaaaaaab", "ab")<<endl;
+	//cout << so.strStr("aaaaaaaab", "ab")<<endl;
+	int a[] = { 1, 1, 1, 2, 2, 3 };
+	vector<int> v(a, a + 6);
+	cout << so.removeDuplicates(v) << endl;
 	return 0;
 }

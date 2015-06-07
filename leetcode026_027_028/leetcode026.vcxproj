@@ -14,7 +14,7 @@
     <ProjectGuid>{6FD8462F-3302-4F89-9C75-5649322C5390}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>leetcode026</RootNamespace>
-    <ProjectName>leetcode026_027_028</ProjectName>
+    <ProjectName>leetcode026_027_028_080</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

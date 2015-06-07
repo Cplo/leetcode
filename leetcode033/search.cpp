@@ -4,7 +4,7 @@ using namespace std;
 
 class Solution {
 public:
-	int search(vector<int>& nums, int target) {
+	/*int search(vector<int>& nums, int target) {
 		int mid;
 		int length = nums.size();
 		if (!length) return -1;
@@ -22,11 +22,9 @@ public:
 			}
 		}
 		return -1;
-		//
-		//int left = 0;
-		//int right = length - 1;
-		//mid = (left + right) / 2;
-		
+	}*/
+	bool search(vector<int>& nums, int target) {
+
 	}
 };
 int main(){
