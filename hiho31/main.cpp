@@ -7,11 +7,12 @@ using namespace std;
 const int N = 205;
 int A[N][N];
 int S[N][N];
+int t, n, m;
 vector<int> row;
 vector<int> column;
-
+int y_num = 0, n_num = 0;
 //1.如果某一个被探明的格子里所标的数字为0，那么它相邻的8个格子里的未探明格子被认作是一定不是地雷的格子。
-void rule1(int n, int m) {
+void rule1() {
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < m; j++) {
 			if (!A[i][j]) {
@@ -26,7 +27,7 @@ void rule1(int n, int m) {
 * 2.如果某一个被探明的格子里所标的数字为K，且它相邻的8个格子里正好有K个没有探明的格子的话，则这K个没有
 *   探明的格子被认作是一定是地雷的格子。
 */
-void rule2(int n, int m) {
+void rule2() {
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < m; j++) {
 			if (A[i][j] <= 0) continue;
@@ -47,7 +48,7 @@ void rule2(int n, int m) {
 * 3.如果某两个探明了的格子A和B，他们中标明的数字分别为P_A和P_B，且他们周围8个格子中没有探明的格子组成的集合分别为S_A和S_B，
 *   如果S_A包含S_B，且|S_A|-|S_B|=P_A-P_B，那么S_A-S_B中的所有格子，被认作是一定是地雷的格子。
 */
-void rule3(int n, int m) {
+void rule3() {
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < m; j++) {
 			if (A[i][j] <= 0) continue;
@@ -126,13 +127,13 @@ void rule3(int n, int m) {
 							if (a - i == -1 && b - j == -1) {
 								int flag = 1;
 								if (a-1>=0)
-									for (int x = b - 1; x <= j; x++) {
+									for (int x = b - 1; x <= b + 1; x++) {
 										if (x >= 0 && x < m&&A[a - 1][x] == -1) {
 											flag = 0; break;
 										}
 									}
 								if (b - 1 >= 0)
-									for (int x = a - 1; x <= i; x++){
+									for (int x = a - 1; x <= a + 1; x++){
 										if (x >= 0 && x < n&&A[x][b - 1] == -1){
 											flag = 0; break;
 										}
@@ -275,15 +276,15 @@ void rule3(int n, int m) {
 			S[row[k]][column[k]] = 1;
 		}
 }
-void mine(int n, int m) {
-	rule1(n, m);
-	rule2(n, m);
-	rule3(n, m);
+void mine() {
+	rule1();
+	rule2();
+	rule3();
 }
 
-void print_ans(int n, int m)
+void print_ans()
 {
-	int y_num = 0, n_num = 0;
+	y_num = n_num = 0;
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < m; j++)
 		{
@@ -294,17 +295,17 @@ void print_ans(int n, int m)
 }
 
 int main(void) {
-	int t, n, m;
 	scanf("%d", &t);
 	for (int i = 0; i < t; i++)
 	{
 		scanf("%d%d", &n, &m);
 		for (int j = 0; j < n; j++) {
-			memset(S[j], -1, m*sizeof(int));
+			memset(S[j], -1, N*sizeof(int));
 			for (int k = 0; k < m; k++) scanf("%d", &A[j][k]); 
 		}
-		mine(n, m);
-		print_ans(n, m);
+		row.clear(); column.clear();
+		mine();
+		print_ans();
 	}
 	system("pause");
 	return 0;

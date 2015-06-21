@@ -1,9 +1,9 @@
-﻿生成启动时间为 2015/6/10 22:33:35。
+﻿生成启动时间为 2015/6/14 21:43:08。
      1>项目“E:\coder\oj\hiho31\hiho31.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>e:\coder\oj\hiho31\main.cpp(274): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\coder\oj\hiho31\main.cpp(275): warning C4018: “<”: 有符号/无符号不匹配
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\coder\oj\Debug\hiho31.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\coder\oj\Debug\hiho31.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\coder\oj\Debug\hiho31.lib" /MACHINE:X86 Debug\main.obj
          hiho31.vcxproj -> E:\coder\oj\Debug\hiho31.exe
@@ -11,4 +11,4 @@
 
 生成成功。
 
-已用时间 00:00:02.46
+已用时间 00:00:00.49

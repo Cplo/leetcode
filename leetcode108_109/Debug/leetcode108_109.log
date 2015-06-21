@@ -1,0 +1,15 @@
+﻿生成启动时间为 2015/6/15 21:43:09。
+     1>项目“E:\coder\oj\leetcode108_109\leetcode108_109.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (leetcode108_109_110.vcxproj, leetcode108_109_110_111.vcxproj, leetcode108_109.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt sortedArrayToBST.cpp
+         sortedArrayToBST.cpp
+     1>e:\coder\oj\leetcode108_109\sortedarraytobst.cpp(160): warning C4018: “<”: 有符号/无符号不匹配
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\coder\oj\Debug\leetcode108_109_110_111_112_113.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\coder\oj\Debug\leetcode108_109_110_111_112_113.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\coder\oj\Debug\leetcode108_109_110_111_112_113.lib" /MACHINE:X86 Debug\sortedArrayToBST.obj
+         leetcode108_109.vcxproj -> E:\coder\oj\Debug\leetcode108_109_110_111_112_113.exe
+     1>已完成生成项目“E:\coder\oj\leetcode108_109\leetcode108_109.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.74
