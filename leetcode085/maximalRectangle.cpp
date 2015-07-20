@@ -4,7 +4,7 @@
 #include<string.h>
 #include<algorithm>
 using namespace std;
-
+//Maximal Rectangle:20ms
 int wid[1000][1000];
 int hei[1000][1000];
 int area1[1000][1000];
